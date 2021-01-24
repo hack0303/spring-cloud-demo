@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="spring-cloud-eureka" />
+        <module name="spring-cloud-gateway" />
+      </profile>
+      <profile name="Annotation profile for clound-config" enabled="true">
+        <sourceOutputDir name="../cloud-config/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../cloud-config/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="spring-cloud-config" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
