@@ -1,0 +1,25 @@
+################ ��Ŀ�������� ################
+server:
+  port: 8081
+  #servlet:
+   # ��Ŀ����·��ǰ׺
+   # context-path: /product
+spring:
+  application:
+  # ע�ᵽEureka�ķ�����
+    name: micro-service-a
+
+################ Eureka���� ################
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+ribbon:
+  eureka:
+    enabled: true
+
+microservice-provider-user:
+  ribbon:
+    listOfServers: localhost:7901,localhost:7902
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule

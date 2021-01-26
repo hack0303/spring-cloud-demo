@@ -9,10 +9,13 @@
         <module name="sping-cloud-simple-eureka-client-demo" />
         <module name="spring-cloud-eureka" />
         <module name="spring-cloud-gateway" />
+        <module name="spring-cloud-simple-micro-service-a" />
+        <module name="spring-cloud-simple-micro-service-b" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="spring-cloud-config" target="1.5" />
+      <module name="spring-cloud-simple-eureka-client-a" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>
