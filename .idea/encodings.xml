@@ -2,11 +2,13 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud-config" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-cloud-eureka" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud-gateway" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-cloud-micro-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud-msg-bus" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-cloud-simple-client-demo" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-cloud-simple-client-demo/sping-cloud-simple-eureka-client-demo" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/spring-cloud-simple-client-demo/sping-cloud-simple-eureka-client-demo/spring-cloud-simple-eureka-client-a" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-cloud-simple-client-demo/spring-cloud-simple-micro-service-a" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-cloud-simple-client-demo/spring-cloud-simple-micro-service-b" charset="UTF-8" />
   </component>
