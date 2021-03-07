@@ -17,6 +17,7 @@
         <module>spring-cloud-simple-client-demo</module>
         <module>spring-cloud-config</module>
         <module>spring-cloud-msg-bus</module>
+        <module>spring-cloud-component</module>
     </modules>
     <name>spring-cloud-demo</name>
     <url>http://maven.apache.org</url>
