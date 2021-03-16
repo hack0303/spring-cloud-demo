@@ -1,9 +1,9 @@
 server.port:
-  ${server.port}
+  @server.port@
 # 对应注册Eureka中的服务名
 spring:
-  application.name: ${application.name}
-  profiles.active: ${profiles.active}
+  application.name: @application.name@
+  profiles.active: @profiles.active@
 eureka.client:
   register-with-eureka: false
   fetch-registry: false

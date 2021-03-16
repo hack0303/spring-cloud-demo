@@ -57,9 +57,7 @@
         </profile>
     </profiles>
     <build>
-        <filters>
-            <filter>./config/${env}/application.properties</filter>
-        </filters>
+
     </build>
 
     <dependencyManagement>
