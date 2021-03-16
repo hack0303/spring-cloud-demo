@@ -38,12 +38,6 @@
             </properties>
         </profile>
         <profile>
-            <id>dev</id>
-            <properties>
-                <env>dev</env>
-            </properties>
-        </profile>
-        <profile>
             <id>test</id>
             <properties>
                 <env>test</env>
@@ -93,6 +87,7 @@
             <url>https://repo.spring.io/milestone</url>
         </repository>
     </repositories>
+
 
 
 
