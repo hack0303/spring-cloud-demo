@@ -18,6 +18,8 @@
         <module>spring-cloud-config</module>
         <module>spring-cloud-msg-bus</module>
         <module>spring-cloud-component</module>
+        <module>spring-cloud-eureka</module>
+        <module>spring-cloud-gateway</module>
     </modules>
     <name>spring-cloud-demo</name>
     <url>http://maven.apache.org</url>
@@ -25,8 +27,46 @@
     <properties>
         <java.version>11</java.version>
         <spring-cloud.version>Greenwich.SR6</spring-cloud.version>
+        <project.build.sourceEncoding>utf8</project.build.sourceEncoding>
     </properties>
 
+    <profiles>
+        <profile>
+            <id>dev</id>
+            <properties>
+                <env>dev</env>
+            </properties>
+        </profile>
+        <profile>
+            <id>dev</id>
+            <properties>
+                <env>dev</env>
+            </properties>
+        </profile>
+        <profile>
+            <id>test</id>
+            <properties>
+                <env>test</env>
+            </properties>
+        </profile>
+        <profile>
+            <id>pre</id>
+            <properties>
+                <env>pre</env>
+            </properties>
+        </profile>
+        <profile>
+            <id>prod</id>
+            <properties>
+                <env>prod</env>
+            </properties>
+        </profile>
+    </profiles>
+    <build>
+        <filters>
+            <filter>./config/${env}/application.properties</filter>
+        </filters>
+    </build>
 
     <dependencyManagement>
         <dependencies>
@@ -53,5 +93,7 @@
             <url>https://repo.spring.io/milestone</url>
         </repository>
     </repositories>
+
+
 
 </project>

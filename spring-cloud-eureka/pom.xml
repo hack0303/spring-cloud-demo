@@ -34,6 +34,10 @@
 
 
     <build>
+        <filters>
+            <filter>../config/{env}/spring-cloud-eureka/*.properties</filter>
+            <filter>../config/{env}/*.properties</filter>
+        </filters>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

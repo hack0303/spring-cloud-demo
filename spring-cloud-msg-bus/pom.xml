@@ -10,6 +10,16 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>spring-cloud-msg-bus</artifactId>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+        </dependency>
+    </dependencies>
 
 
 </project>
