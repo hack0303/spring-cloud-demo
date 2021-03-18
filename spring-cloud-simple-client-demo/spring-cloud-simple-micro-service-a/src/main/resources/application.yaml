@@ -2,9 +2,10 @@ server:
   port: @service.client.a.port@
   #servlet:
    # context-path: /product
+
 spring:
-  application:
-    name: micro-service-a
+  application.name: @application.name@
+  profiles.active: @profiles.active@
 
 ################ Eureka ################
 eureka:

@@ -3,8 +3,8 @@ server:
   #servlet:
    # context-path: /product
 spring:
-  application:
-    name: micro-service-b
+  application.name: @application.name@
+  profiles.active: @profiles.active@
 
 ################ Eureka ################
 eureka:
