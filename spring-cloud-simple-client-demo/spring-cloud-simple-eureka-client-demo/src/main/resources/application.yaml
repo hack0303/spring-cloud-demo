@@ -1,15 +1,12 @@
-################ 项目基本配置 ################
 server:
   port: 8080
   #servlet:
-   # 项目访问路径前缀
    # context-path: /product
 spring:
   application:
-  # 注册到Eureka的服务名
     name: eureka-client-demo
 
-################ Eureka配置 ################
+################ Eureka ################
 eureka:
   client:
     service-url:

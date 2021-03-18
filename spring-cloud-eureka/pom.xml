@@ -34,11 +34,10 @@
 
 
     <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
+        <filters>
+            <filter>../config/${env}/spring-cloud-eureka/application.properties</filter>
+            <filter>../config/${env}/application.properties</filter>
+            <filter>../config/common.properties</filter>
+        </filters>
     </build>
 </project>

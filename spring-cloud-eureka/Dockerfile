@@ -2,8 +2,8 @@
 # VERSION 0.0.1
 # Author: hack0303
 
-### 基础镜像，使用alpine操作系统，openjkd使用8u201
-FROM openjdk:8u201-jdk-alpine3.9
+### 基础镜像，使用alpine操作系统，openjkd使用docker pull openjdk:17-ea-jdk-alpine3.12
+FROM openjdk:17-ea-jdk-alpine3.12
 
 #作者
 MAINTAINER hack0303 <1097037585@qq.com>

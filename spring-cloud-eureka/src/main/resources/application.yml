@@ -1,0 +1,14 @@
+server.port:
+  @eureka.server.port@
+# eureka
+spring:
+  application.name: @application.name@
+  profiles.active: @profiles.active@
+eureka.client:
+  register-with-eureka: false
+  fetch-registry: false
+
+logging.level.com.netflix:
+  eureka: OFF
+  discovery: OFF
+

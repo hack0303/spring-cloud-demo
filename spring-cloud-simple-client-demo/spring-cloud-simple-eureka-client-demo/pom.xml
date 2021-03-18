@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>sping-cloud-simple-eureka-client-demo</artifactId>
+    <artifactId>spring-cloud-simple-eureka-client-demo</artifactId>
 
 
 

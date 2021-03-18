@@ -1,16 +1,13 @@
-################ ��Ŀ�������� ################
 server:
-  port: 8082
+  port: @service.client.b.port@
   #servlet:
-   # ��Ŀ����·��ǰ׺
    # context-path: /product
 spring:
-  application:
-  # ע�ᵽEureka�ķ�����
-    name: micro-service-b
+  application.name: @application.name@
+  profiles.active: @profiles.active@
 
-################ Eureka���� ################
+################ Eureka ################
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka
+      defaultZone: @eureka.client.service-url.defaultZone@
