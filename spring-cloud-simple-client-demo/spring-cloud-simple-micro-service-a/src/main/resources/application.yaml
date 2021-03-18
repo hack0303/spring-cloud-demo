@@ -1,19 +1,16 @@
-################ ��Ŀ�������� ################
 server:
-  port: 8081
+  port: @service.client.a.port@
   #servlet:
-   # ��Ŀ����·��ǰ׺
    # context-path: /product
 spring:
   application:
-  # ע�ᵽEureka�ķ�����
     name: micro-service-a
 
-################ Eureka���� ################
+################ Eureka ################
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka
+      defaultZone: @eureka.client.service-url.defaultZone@
 
 ribbon:
   eureka:

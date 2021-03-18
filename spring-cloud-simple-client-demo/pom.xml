@@ -12,7 +12,7 @@
     <artifactId>spring-cloud-simple-client-demo</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>sping-cloud-simple-eureka-client-demo</module>
+        <module>spring-cloud-simple-eureka-client-demo</module>
         <module>spring-cloud-simple-micro-service-a</module>
         <module>spring-cloud-simple-micro-service-b</module>
     </modules>

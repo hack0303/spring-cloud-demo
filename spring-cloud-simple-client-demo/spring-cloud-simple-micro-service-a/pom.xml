@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>sprint-cloud-simple-micro-service-a</artifactId>
+    <artifactId>spring-cloud-simple-micro-service-a</artifactId>
 
     <dependencies>
         <dependency>
@@ -35,6 +35,10 @@
     </dependencies>
 
     <build>
+        <filters>
+            <filter>../../config/${env}/client-a/application.properties</filter>
+            <filter>../../config/common.properties</filter>
+        </filters>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

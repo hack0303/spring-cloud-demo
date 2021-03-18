@@ -1,6 +1,6 @@
 server.port:
-  @server.port@
-# 对应注册Eureka中的服务名
+  @eureka.server.port@
+# eureka
 spring:
   application.name: @application.name@
   profiles.active: @profiles.active@

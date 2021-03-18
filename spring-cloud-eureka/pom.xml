@@ -37,6 +37,7 @@
         <filters>
             <filter>../config/${env}/spring-cloud-eureka/application.properties</filter>
             <filter>../config/${env}/application.properties</filter>
+            <filter>../config/common.properties</filter>
         </filters>
     </build>
 </project>

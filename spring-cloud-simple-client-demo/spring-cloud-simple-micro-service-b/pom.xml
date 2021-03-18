@@ -35,6 +35,10 @@
     </dependencies>
 
     <build>
+        <filters>
+            <filter>../../config/${env}/client-b/application.properties</filter>
+            <filter>../../config/common.properties</filter>
+        </filters>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
