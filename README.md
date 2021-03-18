@@ -36,4 +36,5 @@ Spring Boot >=2.2.0.BUILD-SNAPSHOT	Hoxton.BUILD-SNAPSHOT
 原文链接：https://blog.csdn.net/qq_33407429/article/details/104494109
 ```
 # DOC REF
-[spring cloud](https://docs.spring.io/spring-cloud/docs/Hoxton.SR10/reference/html/)
+[spring cloud](https://docs.spring.io/spring-cloud/docs/Hoxton.SR10/reference/html/)<br>
+[spring cloud zh](https://www.springcloud.cc/spring-cloud-greenwich.html)
