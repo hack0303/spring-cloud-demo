@@ -13,7 +13,6 @@
     <packaging>pom</packaging>
     <version>0.0.0-SNAPSHOT</version>
     <modules>
-        <module>spring-cloud-micro-service</module>
         <module>spring-cloud-simple-client-demo</module>
         <module>spring-cloud-config</module>
         <module>spring-cloud-msg-bus</module>
