@@ -30,17 +30,23 @@ import org.springframework.context.annotation.Bean;
  * Path Rewriting
  */
 @SpringBootApplication
-public class GatewayApplication {
+public class ServiceGatewayApplication {
 
 
     public static void main(String[] args) {
-        SpringApplication.run(GatewayApplication.class, args);
+        SpringApplication.run(ServiceGatewayApplication.class, args);
     }
 
     @Bean
     public RouteLocator customRouteLocator(RouteLocatorBuilder builder) {
         return builder.routes()
                 .route("path_route", r -> r.path("/get")
+                        .uri("http://httpbin.org"))
+                .route("path_route", r -> r.path("/a")
+                        .uri("lb:"))
+                .route("path_route", r -> r.path("/b")
+                        .uri("http://httpbin.org"))
+                .route("path_route", r -> r.path("/c")
                         .uri("http://httpbin.org"))
                 .route("host_route", r -> r.host("*.myhost.org")
                         .uri("http://httpbin.org"))

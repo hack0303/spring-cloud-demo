@@ -1,0 +1,16 @@
+server.port: @config.server.port@
+spring:
+  application.name: @application.name@
+  profiles.active: @profiles.active@
+  cloud:
+    config:
+      name: @application.name@
+      server:
+        git:
+          uri: @spring.cloud.config.server.git.uri@
+          search-paths: @spring.cloud.config.server.git.search-paths@
+          default-label: @spring.cloud.config.server.git.default-label@
+          skip-ssl-validation: true
+      profile: @profiles.active@
+
+spring.config.import: @spring.config.import@

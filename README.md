@@ -37,4 +37,7 @@ Spring Boot >=2.2.0.BUILD-SNAPSHOT	Hoxton.BUILD-SNAPSHOT
 ```
 # DOC REF
 [spring cloud](https://docs.spring.io/spring-cloud/docs/Hoxton.SR10/reference/html/)<br>
-[spring cloud zh](https://www.springcloud.cc/spring-cloud-greenwich.html)
+[spring cloud zh](https://www.springcloud.cc/spring-cloud-greenwich.html)<br>
+[springcloud and zipkin](https://blog.csdn.net/chengqiuming/article/details/80945082)<br>
+[gateway all](https://blog.csdn.net/qq_29281307/article/details/90235261)
+[spring cloud help](https://blog.csdn.net/maihilton/article/details/106462181?utm_medium=distribute.pc_relevant.none-task-blog-baidujs_title-0&spm=1001.2101.3001.4242)

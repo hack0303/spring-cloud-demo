@@ -1,0 +1,16 @@
+server:
+  port: @admin.server.port@
+
+################ Eureka ################
+eureka:
+  client:
+    service-url:
+      defaultZone: @eureka.client.service-url.defaultZone@
+
+spring:
+  application:
+    name: @application.name@
+  boot:
+    admin:
+      # boot admin 页面的路径
+      context-path: /admin
