@@ -19,6 +19,7 @@
         <module>spring-cloud-component</module>
         <module>spring-cloud-eureka</module>
         <module>spring-cloud-gateway</module>
+        <module>spring-cloud-support</module>
     </modules>
     <name>spring-cloud-demo</name>
     <url>http://maven.apache.org</url>
@@ -27,6 +28,7 @@
         <java.version>11</java.version>
         <spring-cloud.version>Hoxton.SR10</spring-cloud.version>
         <project.build.sourceEncoding>utf8</project.build.sourceEncoding>
+        <zipkin.version>2.12.3</zipkin.version>
     </properties>
 
     <profiles>
@@ -67,6 +69,22 @@
                 <version>${spring-cloud.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>io.zipkin.java</groupId>
+                <artifactId>zipkin-autoconfigure-ui</artifactId>
+                <version>${zipkin.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.zipkin.java</groupId>
+                <artifactId>zipkin-server</artifactId>
+                <version>${zipkin.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.apache.logging.log4j</groupId>
+                        <artifactId>log4j-slf4j-impl</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
         </dependencies>
     </dependencyManagement>

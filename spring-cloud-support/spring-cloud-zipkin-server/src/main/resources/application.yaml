@@ -1,0 +1,14 @@
+server:
+  port: @zipkin.server.port@
+  #servlet:
+   # context-path: /product
+spring:
+  application.name: @application.name@
+  profiles.active: @profiles.active@
+
+logging:
+  config: classpath:logback-spring.xml
+  level:
+    dao: debug
+    org:
+      mybatis: debug
