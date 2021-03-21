@@ -20,6 +20,7 @@
         <module>spring-cloud-eureka</module>
         <module>spring-cloud-gateway</module>
         <module>spring-cloud-support</module>
+        <module>spring-cloud-admin</module>
     </modules>
     <name>spring-cloud-demo</name>
     <url>http://maven.apache.org</url>
@@ -29,6 +30,7 @@
         <spring-cloud.version>Hoxton.SR10</spring-cloud.version>
         <project.build.sourceEncoding>utf8</project.build.sourceEncoding>
         <zipkin.version>2.12.3</zipkin.version>
+        <springboot.admin>2.4.0</springboot.admin>
     </properties>
 
     <profiles>
