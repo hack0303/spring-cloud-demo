@@ -12,5 +12,7 @@ spring:
           default-label: @spring.cloud.config.server.git.default-label@
           skip-ssl-validation: true
       profile: @profiles.active@
+  #    label: test
+
 
 spring.config.import: @spring.config.import@
