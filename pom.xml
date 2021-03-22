@@ -30,7 +30,7 @@
         <spring-cloud.version>Hoxton.SR10</spring-cloud.version>
         <project.build.sourceEncoding>utf8</project.build.sourceEncoding>
         <zipkin.version>2.12.3</zipkin.version>
-        <springboot.admin>2.4.0</springboot.admin>
+        <springboot.admin>2.3.1</springboot.admin>
     </properties>
 
     <profiles>
@@ -90,12 +90,6 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-    <dependencies>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-        </dependency>
-    </dependencies>
 
     <repositories>
         <repository>
