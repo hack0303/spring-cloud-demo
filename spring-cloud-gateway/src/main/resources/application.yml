@@ -4,11 +4,19 @@ server.port:
 spring:
   application.name: @application.name@
   profiles.active: @profiles.active@
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
 eureka.client:
-  register-with-eureka: false
-  fetch-registry: false
+  register-with-eureka: true
+  fetch-registry: true
+  service-url:
+    defaultZone: @eureka.client.service-url.defaultZone@
 
 logging.level.com.netflix:
   eureka: OFF
   discovery: OFF
+
 
