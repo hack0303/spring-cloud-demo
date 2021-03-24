@@ -40,6 +40,8 @@ public class ServiceGatewayApplication {
     @Bean
     public RouteLocator customRouteLocator(RouteLocatorBuilder builder) {
         return builder.routes()
+                .route("path2micro-service-a",r->r.path("/micro-service/api/a/**").filters(f->f.stripPrefix(3)).uri("lb://micro-service-a"))
+                .route("path2micro-service-b",r->r.path("/micro-service/api/b/**").filters(f->f.stripPrefix(3)).uri("lb://micro-service-b"))
                 .route("path_route1", r -> r.path("/get")
                         .uri("http://httpbin.org"))
                 .route("path_route2", r -> r.path("/a/**")
