@@ -21,6 +21,7 @@
         <module>spring-cloud-gateway</module>
         <module>spring-cloud-support</module>
         <module>spring-cloud-admin</module>
+        <module>spring-cloud-monitor</module>
     </modules>
     <name>spring-cloud-demo</name>
     <url>http://maven.apache.org</url>
